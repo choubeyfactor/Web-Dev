@@ -1,0 +1,58 @@
+body{
+  color: #000000;
+  background-color: #F9D371;
+}
+h1
+{
+  color: #000000;
+}
+
+h2
+{
+  color: #0a0417;
+}
+
+h3{
+  color: #000000;
+}
+
+h4
+{
+ color: #070707;
+}
+
+h5
+{
+  color: #c2fc02;
+}
+hr
+{
+  background-color:#313552;
+  border-style: none;
+}
+
+<!--Image styling-->
+
+ img :hover{
+   background-color: gold;
+ }
+ .circular {
+   border-radius: 100%
+ }
+
+
+ <!-- Hovering-->
+
+h4:hover{
+  font-size: large;
+  color: #f20ccc ;
+  border: 5px;
+}
+
+h5:hover{
+  font-size: large;
+  color: #f113ab ;
+}
+
+
+

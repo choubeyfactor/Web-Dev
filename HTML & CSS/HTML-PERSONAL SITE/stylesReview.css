@@ -1,0 +1,12 @@
+#two{
+    text-align: center;
+    text-decoration: overline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px black;
+    font-size: larger;
+    color: rgb(54, 6, 98);
+}
+
+hr{
+    color: black;
+}
