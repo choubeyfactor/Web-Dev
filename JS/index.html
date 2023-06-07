@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Bacho</h1>
+    <p id="js"></p>
+    <button onclick = "hey()" id = "jss">Submit</button>
+    <p1 id="one"><span>Namaste</span> Ji</p1>
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+    <script>
+        //Id
+        let var1 = document.getElementById("one");
+        console.log(var1.innerText);
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2[2].innerText);
+        var2[1].innerText = "Nodejs";
+        var2[1].style.color = "red";
+
+        let var4 = document.querySelector(".class");
+        console.log(var4);
+
+        // DOM Event Listener
+        document.addEventListener("click", hello);
+        function hello(){
+            document.getElementById("js").innerText="Namaste Bacho";
+        }
+
+        function hey(){
+            document.getElementById("jss").innerText= "Namaste";
+            document.getElementById("jss").style.color= "red";
+            document.getElementById("jss").style.backgroundColor="black";
+        }
+    </script>
+</body>
+</html>
