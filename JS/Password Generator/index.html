@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Password Generator</h1>
+        <h5>  -by Mayank Choubey</h5>
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button class="copyBtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAPoA+gMBIgACEQEDEQH/xAAaAAEBAAMBAQAAAAAAAAAAAAAABAEFBgMC/9oACAEBAAAAAOlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeXiAB90AACTUAAF20AANPIAAOjAANJKAAOlAANHKFQ+/HwDpgADRyBXIVvLxMdQAAaGQpz9/L31/t6xmOpAANBIVyDa/OsrkHVAAGgjK5B9VxVyGOsAAOfjK48iuSuQx1oABz0RZGFkdkY64AA52IsjC3H3AY7AAA5yIsiyLIsjHYZAAc1EV/Qe2sDHZZAAczEAAY7PIADmYQADHagAGn0IABd1AAB866YAD02fqAAPkAA+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACgICEAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/EADcQAAECAgYHBwMDBQAAAAAAAAIBAwAEEhQgMTRUERUwQGKRkgUQITNxcnMTMlNRUnAiQUJhsf/aAAgBAQABPwD+SDfab8CNPSK6xxcorrHFyiuscXKK6xxcorrHFyiuscXKK6xxcorrHFyiuscXKK6xxcorrHFyiuscXKK6xxcoGaYPwp6PXcZt9WhQR+4twlH1QhaJf6Vu3CdxJp6JuGnR47hO4p3cFuWEuTbzuKdtNgwjH1XBNdLij4LFKS/G71RSkvxu9UUpL8bvVDQyjrgggO9UPMqyqeNIC8RL9bK3LCXJt57FO2lwI/Ov/LEji2oZMxQmnWzVouFdI/7SHmSZPQty3LYW5YS5NvPYt2xKCBviJjpHQUfXYybfNYrTVChVQo6dOjTH12Mm3zWPrsZNvmsTMqGk1YvDRTCAMgJCElRUuVIrcz+Y4eM3JRgjJVWmdhblhLk28/i3rEjiQ9pWX2ZtJtXWWy9YflTMFeRlWy/zDuPBS/vOwtywlybefxb1iRxQe0rNM/3LziTIlcd0qvkH3Hgpb3uWFuWEuTbz+MesSOKD2nakvMd+A+48DLe9ywtywlybefxj1iQxQe07Uj5rvwOdzmBlvkcsLcsJcm37Qxj1iQxQe07UglJ5xP1YOKi/+5rriYBWpWXbIhpIZ3LpsLcsJcnpt+0ca9YkMWHtO1I+a78DlpblhLk9Nv2jjXrEkYNzIEZII0SiqtZ5mKq1nmYqrWeZiqtZ5mKq1nmYYBhhXTrbZaWjHQlpblhLk9Nv2jjX9wW5YS5PTb9pY17cFuhLk2/akspojwXj4FuEhLq+6hr5YLuBJ/eHuzpd5VLxAuGNUDmC6Y1QOYLpjVA5gumNUDmC6Y1QOYLpjVA5gumNUDmC6Y1QOYLpjVA5gumNUDmC6Y1QOYLpjVA5gumNUDmC6YDspgfvMzgAEUQRFEFLkTcaMUYoxRijFGKMUYoxRijFGKMUYo/zV//EABQRAQAAAAAAAAAAAAAAAAAAAID/2gAIAQIBAT8AAH//xAAUEQEAAAAAAAAAAAAAAAAAAACA/9oACAEDAQE/AAB//9k=" alt="copy" width="23" height="23">
+            </button>
+
+        </div>
+
+
+        <div class="input-container">
+
+            <!--password length section-->
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+            
+            <!--slider-->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <!-- checkboxes-->
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers </label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols </label>
+            </div>
+
+            <!-- strength section-->
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class="indicator" data-indicator></div>
+            </div>
+
+            <!-- generate password-->
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
